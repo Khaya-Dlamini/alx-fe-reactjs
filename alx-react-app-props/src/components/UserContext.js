@@ -1,6 +1,7 @@
-import React,{ Children, createContext } from 'react';
+import{createContext } from 'react';
+import React from 'react';
 
 
-const UserContext = React.createContext(Children);
+const UserContext = React.createContext();
 
 export default UserContext;
