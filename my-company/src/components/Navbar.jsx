@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <nav>
-      <ul>
-        <li>
+      <ul style={{backgroundColor:"green",display:"flex",justifyContent:"center",color:"white",}}>
+        <li style={{padding:"10"}}>
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li style={{padding:"10"}}>
           <Link to="/about">About</Link>
         </li>
-        <li>
+        <li style={{padding:"10"}}>
           <Link to="/services">Services</Link>
         </li>
-        <li>
+        <li style={{padding:"10"}}>
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
