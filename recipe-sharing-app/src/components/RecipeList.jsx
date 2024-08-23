@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useRecipeStore from './recipeStore';
+import { Link } from 'react-router-dom';
 
 const RecipeList = () => {
     const filteredRecipes = useRecipeStore(state => state.filteredRecipes);
@@ -20,9 +21,11 @@ const RecipeList = () => {
             />
             <ul>
                 {filteredRecipes.map((recipe) => (
+                    <Link>
                     <li key={recipe.id}>
                         {recipe.title}
                     </li>
+                    </Link>
                 ))}
             </ul>
         </div>
