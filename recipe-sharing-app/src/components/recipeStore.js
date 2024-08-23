@@ -23,9 +23,9 @@ const useRecipeStore = create((set) => ({
         ),
     })),
 
-    filterRecipes: (searchTerm) => set((state) => ({
+    filterRecipes: (setsearchTerm) => set((state) => ({
         filteredRecipes: state.recipes.filter(recipe =>
-            recipe.title.toLowerCase().includes(searchTerm.toLowerCase())
+            recipe.title.toLowerCase().includes(setsearchTerm.toLowerCase())
         ),
     })),
 }));
