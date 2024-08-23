@@ -7,7 +7,7 @@ const App = () => {
         <Router>
             <Routes>
                 <Route path="/recipes/:recipeId" element={<RecipeDetails />} />
-                <Route path="/" element={<h1>Welcome to Recipe Manager</h1>} />
+                <Route path="/" element={<h1>Welcome to Recipe Manager and AddRecipeForm </h1>} />
             </Routes>
         </Router>
     );
