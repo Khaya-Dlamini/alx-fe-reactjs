@@ -24,8 +24,10 @@ const PostsComponent = () => {
           <li key={post.id}>{post.title}</li>
         ))}
       </ul>
+      cacheTime, staleTime, refetchOnWindowFocus, keepPreviousData
     </div>
   );
 };
 
 export default PostsComponent;
+
