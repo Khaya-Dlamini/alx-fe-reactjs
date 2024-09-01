@@ -4,6 +4,7 @@ import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
 import FavoritesList from './components/FavoritesList';
 import RecommendationsList from './components/RecommendationsList';
+import AddRecipeForm from './components/AddRecipeForm';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 </div>
                 <div style={{ width: '300px', marginLeft: '20px' }}>
                     <FavoritesList />
+                    <AddRecipeForm></AddRecipeForm>
                     <RecommendationsList />
                 </div>
             </div>
