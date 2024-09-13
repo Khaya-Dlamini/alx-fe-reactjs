@@ -13,9 +13,9 @@ const HomePage = () => {
   return (
     <div>
       <h1 className='text-blue-500 hover:text-blue-300 sm:p-4 md:p-8'>Recipe List</h1>
-      <div className='rounded-lg shadow-lg'>
+      <div className='rounded-lg shadow-lg grid grid-cols-1 grid-cols-3 '>
         {recipes.map((recipe) => (
-          <div className='sm:p-4 md:p-4' key={recipe.id}>
+          <div className='sm:p-4 grid-cols-2' key={recipe.id}>
             <h2>{recipe.title}</h2>
             <p>{recipe.summary}</p>
             <img src={recipe.image} alt={recipe.title} />
