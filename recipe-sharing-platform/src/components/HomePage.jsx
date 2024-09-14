@@ -17,6 +17,7 @@ const HomePage = () => {
       <ul>
         <li><Link to = "/" >Recipes</Link></li>
         <li><Link to = "/recipe/:id" >Recipes Details</Link></li>
+        <li> <Link to = '/form'>Add form</Link></li>
         </ul> 
       <div className='pt-10 flex items-center flex flex-wrap grid grid-cols-3 gap-12 grid justify-items-center sm:grid grid-cols-2 gap-10'>
         {users.map(user => (
