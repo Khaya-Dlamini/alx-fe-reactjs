@@ -5,7 +5,7 @@ const HomePage = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('/data.json')
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch((error) => console.error('Error fetching the recipes:', error));
@@ -16,7 +16,7 @@ const HomePage = () => {
       <h1 className='text-blue-500 text-3xl grid justify-items-center'>Recipe List</h1>
       <ul>
         <li><Link to = "/" >Recipes</Link></li>
-        <li><Link to = "/recipe" >Recipes Details</Link></li>
+        <li><Link to = "/recipe/:id" >Recipes Details</Link></li>
         </ul> 
       <div className='pt-10 flex items-center flex flex-wrap grid grid-cols-3 gap-12 grid justify-items-center sm:grid grid-cols-2 gap-10'>
         {users.map(user => (
@@ -31,3 +31,5 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+// 'https://jsonplaceholder.typicode.com/users'
