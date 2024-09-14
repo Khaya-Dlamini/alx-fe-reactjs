@@ -50,7 +50,7 @@ const AddRecipeForm = () => {
           <textarea
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-2 border border-gray-300 rounded md:border-gray-200"
             rows="5"
           ></textarea>
         </div>
@@ -65,7 +65,7 @@ const AddRecipeForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+          className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 shadow-lg"
         >
           Add Recipe
         </button>
