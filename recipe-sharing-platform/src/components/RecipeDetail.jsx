@@ -34,7 +34,7 @@ const RecipeDetail = () => {
         </ul>
       </div>
       <div className="bg-white shadow-md p-4">
-        <h2 className="text-2xl font-semibold mb-2">Cooking Steps</h2>
+        <h2 className="text-2xl font-semibold mb-2">instructions</h2>
         <ol className="list-decimal list-inside">
           {/* Assuming recipe.steps is an array */}
           {recipe.steps && recipe.steps.map((step, index) => (
