@@ -8,7 +8,7 @@ function App() {
         <h1>GitHub User Search</h1>
       </header>
       <main>
-        {/* content here */}
+        
       </main>
     </div>
   
