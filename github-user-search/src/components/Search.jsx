@@ -41,8 +41,8 @@ const Search = () => {
       </form>
 
       {/* Conditional Rendering */}
-      {loading && <p>Loading...</p>}
-      {error && <p>Looks like we can't find the user.</p>}
+      {loading && <p>Loading/ login...</p>}
+      {error && <p>Looks like we cant find the user</p>}
       {userData && (
         <div className="user-info">
           <img src={userData.avatar_url} alt="User Avatar" width="100" />
