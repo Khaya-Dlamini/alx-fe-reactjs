@@ -106,7 +106,7 @@ const Search = () => {
           <img src={userData.avatar_url} alt="User Avatar" width="100" />
           <h2>{userData.name}</h2>
           <a href={userData.html_url} target="_blank" rel="noopener noreferrer">
-            Visit GitHub Profile
+            Visit GitHub Profilé
           </a>
         </div>
       )}
